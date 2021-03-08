@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18867A5F25ED3FF30063D16A /* Eagle_Nation_macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18867A5E25ED3FF30063D16A /* Eagle_Nation_macOSApp.swift */; };
+		18867A6125ED3FF30063D16A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18867A6025ED3FF30063D16A /* HomeView.swift */; };
+		18867A6325ED3FF80063D16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18867A6225ED3FF80063D16A /* Assets.xcassets */; };
+		18867A6625ED3FF80063D16A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18867A6525ED3FF80063D16A /* Preview Assets.xcassets */; };
+		18867A7225ED3FF80063D16A /* Eagle_Nation_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18867A7125ED3FF80063D16A /* Eagle_Nation_macOSTests.swift */; };
+		18867A7D25ED3FF80063D16A /* Eagle_Nation_macOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18867A7C25ED3FF80063D16A /* Eagle_Nation_macOSUITests.swift */; };
+		18867AA025ED42BD0063D16A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18867A9F25ED42BD0063D16A /* AuthView.swift */; };
+		18867AD025F14E9B0063D16A /* AuthBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18867ACF25F14E9B0063D16A /* AuthBackend.swift */; };
+		18867AD825F67BFF0063D16A /* AuthSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18867AD725F67BFF0063D16A /* AuthSettings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18867A6E25ED3FF80063D16A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18867A5325ED3FF30063D16A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18867A5A25ED3FF30063D16A;
+			remoteInfo = "Eagle Nation macOS";
+		};
+		18867A7925ED3FF80063D16A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18867A5325ED3FF30063D16A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18867A5A25ED3FF30063D16A;
+			remoteInfo = "Eagle Nation macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18867AFC25F680080063D16A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		18867A5B25ED3FF30063D16A /* Eagle Nation macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eagle Nation macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18867A5E25ED3FF30063D16A /* Eagle_Nation_macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eagle_Nation_macOSApp.swift; sourceTree = "<group>"; };
+		18867A6025ED3FF30063D16A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		18867A6225ED3FF80063D16A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18867A6525ED3FF80063D16A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18867A6725ED3FF80063D16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18867A6825ED3FF80063D16A /* Eagle_Nation_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Eagle_Nation_macOS.entitlements; sourceTree = "<group>"; };
+		18867A6D25ED3FF80063D16A /* Eagle Nation macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eagle Nation macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18867A7125ED3FF80063D16A /* Eagle_Nation_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eagle_Nation_macOSTests.swift; sourceTree = "<group>"; };
+		18867A7325ED3FF80063D16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18867A7825ED3FF80063D16A /* Eagle Nation macOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eagle Nation macOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18867A7C25ED3FF80063D16A /* Eagle_Nation_macOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eagle_Nation_macOSUITests.swift; sourceTree = "<group>"; };
+		18867A7E25ED3FF80063D16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18867A9F25ED42BD0063D16A /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		18867ACF25F14E9B0063D16A /* AuthBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBackend.swift; sourceTree = "<group>"; };
+		18867AD725F67BFF0063D16A /* AuthSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSettings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18867A5825ED3FF30063D16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18867A6A25ED3FF80063D16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18867A7525ED3FF80063D16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18867A5225ED3FF30063D16A = {
+			isa = PBXGroup;
+			children = (
+				18867A5D25ED3FF30063D16A /* Eagle Nation macOS */,
+				18867A7025ED3FF80063D16A /* Eagle Nation macOSTests */,
+				18867A7B25ED3FF80063D16A /* Eagle Nation macOSUITests */,
+				18867A5C25ED3FF30063D16A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18867A5C25ED3FF30063D16A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18867A5B25ED3FF30063D16A /* Eagle Nation macOS.app */,
+				18867A6D25ED3FF80063D16A /* Eagle Nation macOSTests.xctest */,
+				18867A7825ED3FF80063D16A /* Eagle Nation macOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18867A5D25ED3FF30063D16A /* Eagle Nation macOS */ = {
+			isa = PBXGroup;
+			children = (
+				18867A5E25ED3FF30063D16A /* Eagle_Nation_macOSApp.swift */,
+				18867A9F25ED42BD0063D16A /* AuthView.swift */,
+				18867AD725F67BFF0063D16A /* AuthSettings.swift */,
+				18867ACF25F14E9B0063D16A /* AuthBackend.swift */,
+				18867A6025ED3FF30063D16A /* HomeView.swift */,
+				18867A6225ED3FF80063D16A /* Assets.xcassets */,
+				18867A6725ED3FF80063D16A /* Info.plist */,
+				18867A6825ED3FF80063D16A /* Eagle_Nation_macOS.entitlements */,
+				18867A6425ED3FF80063D16A /* Preview Content */,
+			);
+			path = "Eagle Nation macOS";
+			sourceTree = "<group>";
+		};
+		18867A6425ED3FF80063D16A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18867A6525ED3FF80063D16A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18867A7025ED3FF80063D16A /* Eagle Nation macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				18867A7125ED3FF80063D16A /* Eagle_Nation_macOSTests.swift */,
+				18867A7325ED3FF80063D16A /* Info.plist */,
+			);
+			path = "Eagle Nation macOSTests";
+			sourceTree = "<group>";
+		};
+		18867A7B25ED3FF80063D16A /* Eagle Nation macOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18867A7C25ED3FF80063D16A /* Eagle_Nation_macOSUITests.swift */,
+				18867A7E25ED3FF80063D16A /* Info.plist */,
+			);
+			path = "Eagle Nation macOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18867A5A25ED3FF30063D16A /* Eagle Nation macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18867A8125ED3FF80063D16A /* Build configuration list for PBXNativeTarget "Eagle Nation macOS" */;
+			buildPhases = (
+				18867A5725ED3FF30063D16A /* Sources */,
+				18867A5825ED3FF30063D16A /* Frameworks */,
+				18867A5925ED3FF30063D16A /* Resources */,
+				18867AFC25F680080063D16A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eagle Nation macOS";
+			productName = "Eagle Nation macOS";
+			productReference = 18867A5B25ED3FF30063D16A /* Eagle Nation macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18867A6C25ED3FF80063D16A /* Eagle Nation macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18867A8425ED3FF80063D16A /* Build configuration list for PBXNativeTarget "Eagle Nation macOSTests" */;
+			buildPhases = (
+				18867A6925ED3FF80063D16A /* Sources */,
+				18867A6A25ED3FF80063D16A /* Frameworks */,
+				18867A6B25ED3FF80063D16A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18867A6F25ED3FF80063D16A /* PBXTargetDependency */,
+			);
+			name = "Eagle Nation macOSTests";
+			productName = "Eagle Nation macOSTests";
+			productReference = 18867A6D25ED3FF80063D16A /* Eagle Nation macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18867A7725ED3FF80063D16A /* Eagle Nation macOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18867A8725ED3FF80063D16A /* Build configuration list for PBXNativeTarget "Eagle Nation macOSUITests" */;
+			buildPhases = (
+				18867A7425ED3FF80063D16A /* Sources */,
+				18867A7525ED3FF80063D16A /* Frameworks */,
+				18867A7625ED3FF80063D16A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18867A7A25ED3FF80063D16A /* PBXTargetDependency */,
+			);
+			name = "Eagle Nation macOSUITests";
+			productName = "Eagle Nation macOSUITests";
+			productReference = 18867A7825ED3FF80063D16A /* Eagle Nation macOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18867A5325ED3FF30063D16A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					18867A5A25ED3FF30063D16A = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					18867A6C25ED3FF80063D16A = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 18867A5A25ED3FF30063D16A;
+					};
+					18867A7725ED3FF80063D16A = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 18867A5A25ED3FF30063D16A;
+					};
+				};
+			};
+			buildConfigurationList = 18867A5625ED3FF30063D16A /* Build configuration list for PBXProject "Eagle Nation macOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18867A5225ED3FF30063D16A;
+			productRefGroup = 18867A5C25ED3FF30063D16A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18867A5A25ED3FF30063D16A /* Eagle Nation macOS */,
+				18867A6C25ED3FF80063D16A /* Eagle Nation macOSTests */,
+				18867A7725ED3FF80063D16A /* Eagle Nation macOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18867A5925ED3FF30063D16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18867A6625ED3FF80063D16A /* Preview Assets.xcassets in Resources */,
+				18867A6325ED3FF80063D16A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18867A6B25ED3FF80063D16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18867A7625ED3FF80063D16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18867A5725ED3FF30063D16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18867A6125ED3FF30063D16A /* HomeView.swift in Sources */,
+				18867AD825F67BFF0063D16A /* AuthSettings.swift in Sources */,
+				18867A5F25ED3FF30063D16A /* Eagle_Nation_macOSApp.swift in Sources */,
+				18867AD025F14E9B0063D16A /* AuthBackend.swift in Sources */,
+				18867AA025ED42BD0063D16A /* AuthView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18867A6925ED3FF80063D16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18867A7225ED3FF80063D16A /* Eagle_Nation_macOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18867A7425ED3FF80063D16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18867A7D25ED3FF80063D16A /* Eagle_Nation_macOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18867A6F25ED3FF80063D16A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18867A5A25ED3FF30063D16A /* Eagle Nation macOS */;
+			targetProxy = 18867A6E25ED3FF80063D16A /* PBXContainerItemProxy */;
+		};
+		18867A7A25ED3FF80063D16A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18867A5A25ED3FF30063D16A /* Eagle Nation macOS */;
+			targetProxy = 18867A7925ED3FF80063D16A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18867A7F25ED3FF80063D16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18867A8025ED3FF80063D16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		18867A8225ED3FF80063D16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Eagle Nation macOS/Eagle_Nation_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Eagle Nation macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 883DK65VTV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Eagle Nation macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ephs.Eagle-Nation-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		18867A8325ED3FF80063D16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Eagle Nation macOS/Eagle_Nation_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Eagle Nation macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 883DK65VTV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Eagle Nation macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ephs.Eagle-Nation-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		18867A8525ED3FF80063D16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 883DK65VTV;
+				INFOPLIST_FILE = "Eagle Nation macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ephs.Eagle-Nation-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eagle Nation macOS.app/Contents/MacOS/Eagle Nation macOS";
+			};
+			name = Debug;
+		};
+		18867A8625ED3FF80063D16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 883DK65VTV;
+				INFOPLIST_FILE = "Eagle Nation macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ephs.Eagle-Nation-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eagle Nation macOS.app/Contents/MacOS/Eagle Nation macOS";
+			};
+			name = Release;
+		};
+		18867A8825ED3FF80063D16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 883DK65VTV;
+				INFOPLIST_FILE = "Eagle Nation macOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ephs.Eagle-Nation-macOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Eagle Nation macOS";
+			};
+			name = Debug;
+		};
+		18867A8925ED3FF80063D16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 883DK65VTV;
+				INFOPLIST_FILE = "Eagle Nation macOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.ephs.Eagle-Nation-macOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Eagle Nation macOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18867A5625ED3FF30063D16A /* Build configuration list for PBXProject "Eagle Nation macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18867A7F25ED3FF80063D16A /* Debug */,
+				18867A8025ED3FF80063D16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18867A8125ED3FF80063D16A /* Build configuration list for PBXNativeTarget "Eagle Nation macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18867A8225ED3FF80063D16A /* Debug */,
+				18867A8325ED3FF80063D16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18867A8425ED3FF80063D16A /* Build configuration list for PBXNativeTarget "Eagle Nation macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18867A8525ED3FF80063D16A /* Debug */,
+				18867A8625ED3FF80063D16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18867A8725ED3FF80063D16A /* Build configuration list for PBXNativeTarget "Eagle Nation macOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18867A8825ED3FF80063D16A /* Debug */,
+				18867A8925ED3FF80063D16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18867A5325ED3FF30063D16A /* Project object */;
+}
