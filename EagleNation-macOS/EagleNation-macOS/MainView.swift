@@ -9,38 +9,45 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        NavigationView {
-            ZStack() {
-                VStack() {
-                    Text("Announcements").font(.largeTitle).multilineTextAlignment(.leading)
-                    Spacer()
-                    List {
-                        Text("placement")
-                    }
-                    Spacer()
-                }
-                .font(.custom(fontName, size: 18))
-                .padding()
-                Image("EPHS")
+        HStack() {
+            NavigationView {
+                Sidebar()
             }
-            .navigationTitle("Welcome to Eden Prairie")
+            .frame(maxWidth: 150)
+            Announcements()
         }
     }
 }
 
 
-struct SideBar: View {
+struct Announcements: View {
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("Announcements").font(.largeTitle)
+            Spacer()
+        }
+        .font(.custom(fontName, size: 18))
+        .padding(.trailing, 200)
+        .padding()
+    }
+}
+
+struct Sidebar: View {
     var body: some View {
         VStack() {
-            Text("Announcements")
+            Image("EPWings")
+                .resizable()
+                .scaledToFit()
+                .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
             Divider()
-            Text("Schedule")
-            Spacer()
-            Text("Grades")
-            Divider()
-            Text("Calendar")
-            Divider()
-            Text("Clubs")
+            List {
+                Text("Announcements")
+                Text("Schedule")
+                Text("Grades")
+                Text("Calendar")
+                Text("Clubs")
+            }
+            .listStyle(SidebarListStyle())
         }
     }
 }
@@ -49,13 +56,6 @@ struct SideBar: View {
 // MARK: - Constants
 
 let fontName = "HelveticaNeue-Medium"
-
-
-
-
-
-
-
 
 
 
