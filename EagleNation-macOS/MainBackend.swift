@@ -6,20 +6,23 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct MainBackend<Destination> {
+struct MainBackend {
     let navDirs = [
-        NavDir(name: "News", dest: NewsView() as! Destination),
-        NavDir(name: "Bulletin", dest: BulletinView() as! Destination),
-        NavDir(name: "Clubs", dest: ClubsView() as! Destination),
-        NavDir(name: "Schedule", dest: ScheduleView() as! Destination),
-        NavDir(name: "Calendar", dest: CalendarView() as! Destination),
-        NavDir(name: "Campus", dest: CampusView() as! Destination)
+        NavDir(title: "News", dest: AnyView(NewsView())),
+        NavDir(title: "Bulletin", dest: AnyView(BulletinView())),
+        NavDir(title: "Clubs", dest: AnyView(ClubsView())),
+        NavDir(title: "Schedule", dest: AnyView(ScheduleView())),
+        NavDir(title: "Calendar", dest: AnyView(CalendarView())),
+        NavDir(title: "Campus", dest: AnyView(CampusView()))
     ]
     
     struct NavDir: Identifiable {
-        let name: String
-        var dest: Destination
+        let title: String
+        let dest: AnyView
         var id = UUID()
     }
 }
+
+

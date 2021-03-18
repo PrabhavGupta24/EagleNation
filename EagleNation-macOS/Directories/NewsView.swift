@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NewsView: View {
+    
     var body: some View {
         ZStack(alignment: .topLeading) {
             VStack() {

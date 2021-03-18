@@ -8,13 +8,10 @@
 import SwiftUI
 
 struct MainView: View {
-    let navDirs = MainCommunication().navDirs
-    
     var body: some View {
         NavigationView {
-            NavBar<AnyView>(navDirs) { navDir -> Destination in
-                let destination = navDir.destination
-                return destination
+            NavBar { NavDir in
+                NavDir.dest
             }
             NewsView()
         }
@@ -23,7 +20,7 @@ struct MainView: View {
 
 struct NavBar<Destination: View>: View {
     let navDirs = MainCommunication().navDirs
-    let buildDestination: (MainBackend<View>.NavDir) -> Destination
+    let buildDestination: (MainBackend.NavDir) -> Destination
     
     var body: some View {
         VStack() {
@@ -32,16 +29,15 @@ struct NavBar<Destination: View>: View {
                 .scaledToFit()
                 .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
             Divider()
-            List(navDirs) { navDir in
-                NavigationLink(destination: buildDestination(navDir)) {
-                    Text(navDir.name)
+            List(navDirs) { NavDir in
+                NavigationLink(destination: buildDestination(NavDir)) {
+                    Text(NavDir.title)
                 }
             }
             .listStyle(SidebarListStyle())
         }
     }
 }
-
 
 // MARK: - Constants
 

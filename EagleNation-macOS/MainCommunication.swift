@@ -11,10 +11,10 @@ import SwiftUI
     All communication must pass through here */
 
 class MainCommunication: ObservableObject {
-    @Published private var backend = MainBackend<AnyView>()
+    @Published private var backend = MainBackend()
     
     // MARK: - Access to Model
-    var navDirs: Array<MainBackend<AnyView>.NavDir> {
+    var navDirs: [MainBackend.NavDir] {
         backend.navDirs
     }
     
