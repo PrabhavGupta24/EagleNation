@@ -1,6 +1,6 @@
 # EagleNation
 
-EagleNation is a SwiftUI-based application for students and parents to access all things Eden Prairie Schools. The goal of this project is to create an efficient and centralized method of accessing student resources.
+EagleNation is a SwiftUI-based application for students and parents to view all things Eden Prairie Schools. The goal of this project is to create an efficient and centralized method of accessing student resources.
 
 ## Roadmap
   - [ ] Interface
