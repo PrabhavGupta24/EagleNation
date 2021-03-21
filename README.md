@@ -14,9 +14,9 @@ EagleNation is a SwiftUI-based application for students and parents to view all 
     - [ ] Conform to human interface guidelines
  
   - [ ] Backend
-    - [ ] Follow MVVM architecture
-    - [ ] Clubs database
-    - [ ] Bulletin admin upload (database)
+    - [x] Follow MVVM architecture
+    - [ ] Clubs backend
+    - [ ] Bulletin admin upload
     - [ ] News upload / web scraper
     - [ ] iCloud database storage
     - [ ] Google account sync
