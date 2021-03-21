@@ -19,6 +19,7 @@ EagleNation is a SwiftUI-based application for students and parents to access al
     - [ ] News upload / web scraper
     - [ ] iCloud database storage
     - [ ] Google account sync
+    - [ ] Expand to iOS / iPadOS
    
 ## Contribute to Eagle Nation
 Required: Xcode 12, macOS 11.0
