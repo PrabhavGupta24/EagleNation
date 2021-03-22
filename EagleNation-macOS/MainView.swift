@@ -21,10 +21,11 @@ struct MainView: View {
 struct NavBar<Destination: View>: View {
     let navDirs = MainCommunication().navDirs
     let buildDestination: (MainBackend.NavDir) -> Destination
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
     
     var body: some View {
         VStack() {
-            Image("EPWingsDark")
+            Image(colorScheme == .light ? "EPWingsLight" : "EPWingsDark")
                 .resizable()
                 .scaledToFit()
                 .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
@@ -34,14 +35,13 @@ struct NavBar<Destination: View>: View {
                     Text(NavDir.title)
                 }
             }
-            .listStyle(SidebarListStyle())
         }
     }
 }
 
 // MARK: - Constants
 
-let fontName = "HelveticaNeue-Medium"
+let fontName = "OpenSans-Regular"
 
 
 // MARK: - Preview
@@ -49,5 +49,6 @@ let fontName = "HelveticaNeue-Medium"
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            
     }
 }

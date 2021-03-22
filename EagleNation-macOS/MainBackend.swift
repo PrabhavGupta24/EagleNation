@@ -14,8 +14,7 @@ struct MainBackend {
         NavDir(title: "Bulletin", dest: AnyView(BulletinView())),
         NavDir(title: "Clubs", dest: AnyView(ClubsView())),
         NavDir(title: "Schedule", dest: AnyView(ScheduleView())),
-        NavDir(title: "Calendar", dest: AnyView(CalendarView())),
-        NavDir(title: "Campus", dest: AnyView(CampusView()))
+        NavDir(title: "Calendar", dest: AnyView(CalendarView()))
     ]
     
     struct NavDir: Identifiable {
