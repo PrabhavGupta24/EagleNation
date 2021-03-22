@@ -23,11 +23,11 @@ struct NewsView: View {
                 Image("EPEagleHalf")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 180)
+                    .frame(width: 120)
                     .opacity(0.85)
                 
                 NewsBlock()
-                    .padding(EdgeInsets(top: 0, leading: 120, bottom: 20, trailing: 20))
+                    .padding(EdgeInsets(top: 0, leading: 75, bottom: 30, trailing: 75))
             }
         }
         .navigationTitle("EagleNation News")
