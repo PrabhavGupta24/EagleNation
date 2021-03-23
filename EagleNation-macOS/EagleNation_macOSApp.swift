@@ -12,6 +12,7 @@ struct EagleNation_macOSApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .frame(minWidth: 720, idealWidth: 900, minHeight: 440, idealHeight: 550)
         }
     }
 }

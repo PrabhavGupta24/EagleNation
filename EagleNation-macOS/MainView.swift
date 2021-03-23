@@ -36,6 +36,7 @@ struct NavBar<Destination: View>: View {
                 }
             }
         }
+        .font(.custom(fontName, size: 18))
     }
 }
 

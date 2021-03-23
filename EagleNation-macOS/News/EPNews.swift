@@ -7,14 +7,7 @@
 
 import SwiftUI
 
-struct EPNews: View {
-    var body: some View {
-        Text("Hello World")
-    }
-}
-
-struct EPNews_Previews: PreviewProvider {
-    static var previews: some View {
-        EPNews()
-    }
+class EPNews {
+    //private var newsBackend = NewsBackend()
+    
 }

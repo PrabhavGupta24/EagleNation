@@ -23,5 +23,3 @@ struct MainBackend {
         var id = UUID()
     }
 }
-
-

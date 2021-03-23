@@ -10,14 +10,11 @@ import SwiftUI
 /* View Model for secure communication between view (MainView.swift) and model (MainBackend.swift)
     All communication must pass through here */
 
-class MainCommunication: ObservableObject {
-    @Published private var backend = MainBackend()
+class MainCommunication {
+    private var mainBackend = MainBackend()
     
     // MARK: - Access to Model
     var navDirs: [MainBackend.NavDir] {
-        backend.navDirs
+        mainBackend.navDirs
     }
-    
-    // MARK: - User Intent(s)
-    
 }
