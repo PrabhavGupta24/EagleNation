@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct NewsBackend {
+    
+    let news: [Article]
+    
+    struct Article {
+        var title: String
+        var body: String
+    }
+}
