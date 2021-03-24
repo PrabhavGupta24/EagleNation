@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182A095E260AD41000C4CC90 /* EPAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A095D260AD41000C4CC90 /* EPAuth.swift */; };
+		182A0961260AD42200C4CC90 /* AuthBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A0960260AD42200C4CC90 /* AuthBackend.swift */; };
+		182A0965260AD50C00C4CC90 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A0964260AD50C00C4CC90 /* AdminView.swift */; };
+		182A0968260AD52900C4CC90 /* EPAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A0967260AD52900C4CC90 /* EPAdmin.swift */; };
+		182A096B260AD55200C4CC90 /* Admins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A096A260AD55200C4CC90 /* Admins.swift */; };
+		182A096E260AD5E200C4CC90 /* NewsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A096D260AD5E200C4CC90 /* NewsTemplate.swift */; };
 		1855DA0D2607AA6600144486 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1855DA0C2607AA6500144486 /* OpenSans-SemiBold.ttf */; };
 		1855DA172607AA7200144486 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1855DA162607AA7200144486 /* OpenSans-Regular.ttf */; };
 		1855DA1E2607AA7F00144486 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1855DA1D2607AA7F00144486 /* OpenSans-Bold.ttf */; };
@@ -28,6 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		182A095D260AD41000C4CC90 /* EPAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPAuth.swift; sourceTree = "<group>"; };
+		182A0960260AD42200C4CC90 /* AuthBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBackend.swift; sourceTree = "<group>"; };
+		182A0964260AD50C00C4CC90 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		182A0967260AD52900C4CC90 /* EPAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPAdmin.swift; sourceTree = "<group>"; };
+		182A096A260AD55200C4CC90 /* Admins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admins.swift; sourceTree = "<group>"; };
+		182A096D260AD5E200C4CC90 /* NewsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTemplate.swift; sourceTree = "<group>"; };
 		1855DA0C2607AA6500144486 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		1855DA162607AA7200144486 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		1855DA1D2607AA7F00144486 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -62,12 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182A0963260AD4E900C4CC90 /* Administration */ = {
+			isa = PBXGroup;
+			children = (
+				182A0964260AD50C00C4CC90 /* AdminView.swift */,
+				182A0967260AD52900C4CC90 /* EPAdmin.swift */,
+				182A096A260AD55200C4CC90 /* Admins.swift */,
+			);
+			path = Administration;
+			sourceTree = "<group>";
+		};
 		1855D9E72605113500144486 /* News */ = {
 			isa = PBXGroup;
 			children = (
 				18D7B1BD25FB4B4B00083983 /* NewsView.swift */,
 				1855DA422607BB2600144486 /* EPNews.swift */,
 				1855DA452607BB7600144486 /* NewsBackend.swift */,
+				182A096D260AD5E200C4CC90 /* NewsTemplate.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -134,7 +157,6 @@
 		18867C1B25F7325F0063D16A /* EagleNation-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				18D7B1E125FBE6BD00083983 /* Authentication */,
 				18867C5025F7333A0063D16A /* MainView.swift */,
 				18867C5725F734040063D16A /* MainCommunication.swift */,
 				18867C4F25F7333A0063D16A /* MainBackend.swift */,
@@ -144,6 +166,8 @@
 				1855D9E92605116600144486 /* Clubs */,
 				1855D9EA2605117500144486 /* Schedule */,
 				1855D9EB2605119100144486 /* Calendar */,
+				18D7B1E125FBE6BD00083983 /* Authentication */,
+				182A0963260AD4E900C4CC90 /* Administration */,
 				18867C2025F732630063D16A /* Assets.xcassets */,
 				1855DA0B2607AA2300144486 /* fonts */,
 				18867C2525F732630063D16A /* Info.plist */,
@@ -165,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				18867C4E25F7333A0063D16A /* AuthView.swift */,
+				182A095D260AD41000C4CC90 /* EPAuth.swift */,
+				182A0960260AD42200C4CC90 /* AuthBackend.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -242,18 +268,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182A096E260AD5E200C4CC90 /* NewsTemplate.swift in Sources */,
 				18D7B1D725FB4D2300083983 /* CalendarView.swift in Sources */,
 				1855DA462607BB7600144486 /* NewsBackend.swift in Sources */,
 				1855DA432607BB2600144486 /* EPNews.swift in Sources */,
 				18867C5225F7333A0063D16A /* MainBackend.swift in Sources */,
 				18D7B1C825FB4CEE00083983 /* BulletinView.swift in Sources */,
 				18867C5325F7333A0063D16A /* MainView.swift in Sources */,
+				182A0968260AD52900C4CC90 /* EPAdmin.swift in Sources */,
+				182A095E260AD41000C4CC90 /* EPAuth.swift in Sources */,
 				18867C5125F7333A0063D16A /* AuthView.swift in Sources */,
 				18D7B1BE25FB4B4B00083983 /* NewsView.swift in Sources */,
 				18D7B1D225FB4D1900083983 /* ScheduleView.swift in Sources */,
+				182A096B260AD55200C4CC90 /* Admins.swift in Sources */,
 				18867C1D25F7325F0063D16A /* EagleNation_macOSApp.swift in Sources */,
 				18D7B1CD25FB4D0000083983 /* ClubsView.swift in Sources */,
+				182A0961260AD42200C4CC90 /* AuthBackend.swift in Sources */,
 				18867C5825F734040063D16A /* MainCommunication.swift in Sources */,
+				182A0965260AD50C00C4CC90 /* AdminView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

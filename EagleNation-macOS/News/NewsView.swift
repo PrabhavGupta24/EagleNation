@@ -48,7 +48,11 @@ struct NewsBlock: View {
                 .foregroundColor(Color(.windowBackgroundColor))
                 .shadow(radius: 10)
                 // add blur
-            Text("News")
+            
+            List {
+                //foreach news
+                // news.title ... news.body
+            }
         }
     }
 }
