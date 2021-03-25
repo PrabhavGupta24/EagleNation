@@ -42,6 +42,8 @@ struct NewsView: View {
 }
 
 struct NewsBlock: View {
+    @State var isModal: Bool = false
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 12)
@@ -49,10 +51,15 @@ struct NewsBlock: View {
                 .shadow(radius: 10)
                 // add blur
             
-            List {
-                //foreach news
-                // news.title ... news.body
-            }
+            Button("New") {
+                self.isModal = true
+            }.sheet(isPresented: $isModal, content: { NewArticleView() })
+//                Image(systemName: "plus")
+//
+//            List {
+//                //foreach news
+//                // news.title ... news.body
+//            }
         }
     }
 }

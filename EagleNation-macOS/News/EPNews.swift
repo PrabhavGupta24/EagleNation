@@ -8,6 +8,10 @@
 import SwiftUI
 
 class EPNews {
-    //private var newsBackend = NewsBackend()
+    private var newsBackend = NewsBackend()
     
+    // MARK: - Access to Model
+    var news: [NewsBackend.Article] {
+        newsBackend.news
+    }
 }

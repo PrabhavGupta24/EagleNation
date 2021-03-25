@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct NewsTemplate: View {
+struct ArticleView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("article")
     }
 }
 
 struct NewsTemplate_Previews: PreviewProvider {
     static var previews: some View {
-        NewsTemplate()
+        ArticleView()
     }
 }

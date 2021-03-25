@@ -9,7 +9,11 @@ import Foundation
 
 struct NewsBackend {
     
-    let news: [Article]
+    var news = [Article]()
+    
+    mutating func newArticle(title: String, body: String) {
+        news.append(Article(title: title, body: body))
+    }
     
     struct Article {
         var title: String
