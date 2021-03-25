@@ -5,7 +5,6 @@ EagleNation is a SwiftUI-based application for students and parents to view all 
 ## Roadmap
   - [ ] Interface
     - [x] Navigation
-    - [ ] Home tab
     - [ ] News tab
     - [ ] Daily bulletin tab
     - [ ] Clubs finder tab
