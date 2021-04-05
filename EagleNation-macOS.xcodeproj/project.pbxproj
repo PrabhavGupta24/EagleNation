@@ -14,6 +14,8 @@
 		182A096B260AD55200C4CC90 /* Admins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A096A260AD55200C4CC90 /* Admins.swift */; };
 		182A096E260AD5E200C4CC90 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A096D260AD5E200C4CC90 /* ArticleView.swift */; };
 		182A0972260C12BA00C4CC90 /* NewArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A0971260C12BA00C4CC90 /* NewArticleView.swift */; };
+		182A097E2616ACD400C4CC90 /* EPBulletin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A097D2616ACD400C4CC90 /* EPBulletin.swift */; };
+		182A09812616AD4800C4CC90 /* BulletinBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A09802616AD4800C4CC90 /* BulletinBackend.swift */; };
 		1855DA0D2607AA6600144486 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1855DA0C2607AA6500144486 /* OpenSans-SemiBold.ttf */; };
 		1855DA172607AA7200144486 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1855DA162607AA7200144486 /* OpenSans-Regular.ttf */; };
 		1855DA1E2607AA7F00144486 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1855DA1D2607AA7F00144486 /* OpenSans-Bold.ttf */; };
@@ -42,6 +44,8 @@
 		182A096A260AD55200C4CC90 /* Admins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Admins.swift; sourceTree = "<group>"; };
 		182A096D260AD5E200C4CC90 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		182A0971260C12BA00C4CC90 /* NewArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArticleView.swift; sourceTree = "<group>"; };
+		182A097D2616ACD400C4CC90 /* EPBulletin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPBulletin.swift; sourceTree = "<group>"; };
+		182A09802616AD4800C4CC90 /* BulletinBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinBackend.swift; sourceTree = "<group>"; };
 		1855DA0C2607AA6500144486 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		1855DA162607AA7200144486 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		1855DA1D2607AA7F00144486 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				18D7B1C725FB4CEE00083983 /* BulletinView.swift */,
+				182A097D2616ACD400C4CC90 /* EPBulletin.swift */,
+				182A09802616AD4800C4CC90 /* BulletinBackend.swift */,
 			);
 			path = Bulletin;
 			sourceTree = "<group>";
@@ -278,6 +284,8 @@
 				18867C5225F7333A0063D16A /* MainBackend.swift in Sources */,
 				18D7B1C825FB4CEE00083983 /* BulletinView.swift in Sources */,
 				182A0972260C12BA00C4CC90 /* NewArticleView.swift in Sources */,
+				182A09812616AD4800C4CC90 /* BulletinBackend.swift in Sources */,
+				182A097E2616ACD400C4CC90 /* EPBulletin.swift in Sources */,
 				18867C5325F7333A0063D16A /* MainView.swift in Sources */,
 				182A0968260AD52900C4CC90 /* EPAdmin.swift in Sources */,
 				182A095E260AD41000C4CC90 /* EPAuth.swift in Sources */,

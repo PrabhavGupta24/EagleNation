@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ArticleView: View {
+    @State var articleTitle = ""
+    @State var articleBody = ""
+    
     var body: some View {
         Text("article")
     }

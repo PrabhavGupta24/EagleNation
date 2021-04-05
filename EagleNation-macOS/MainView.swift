@@ -21,6 +21,7 @@ struct MainView: View {
 struct NavBar<Destination: View>: View {
     let navDirs = MainCommunication().navDirs
     let buildDestination: (MainBackend.NavDir) -> Destination
+    @State var selectedView: Int? = 0
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     
     var body: some View {
@@ -31,7 +32,7 @@ struct NavBar<Destination: View>: View {
                 .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
             Divider()
             List(navDirs) { NavDir in
-                NavigationLink(destination: buildDestination(NavDir)) {
+                NavigationLink(destination: buildDestination(NavDir), tag: NavDir, selection: $selectedView) {
                     Text(NavDir.title)
                 }
             }

@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct BulletinView: View {
-    
     var body: some View {
-        Text("\u{E90B}").font(.custom("icomoon", size: 40))
+        VStack {
+            HStack {
+                Text("Daily Bulletin").font(.largeTitle)
+                Spacer()
+            }
+            Spacer()
+            Bulletin()
+            Spacer()
+        }
+        .padding()
+    }
+}
+
+struct Bulletin: View {
+    var body: some View {
+        Text("Insert here")
     }
 }
 
