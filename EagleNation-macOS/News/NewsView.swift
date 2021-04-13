@@ -7,37 +7,41 @@
 
 import SwiftUI
 
-struct NewsView: View {    
+struct NewsView: View {
     var body: some View {
-        VStack {
-            Group {
-                Text("\u{E90B}")
-                + Text(" EP Schools News ").font(.custom("OpenSans-Bold", size: 40))
-                + Text("\u{E91F}")
+        VStack(alignment: .leading, spacing: 10) {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("\u{E90B}").font(.custom("icomoon", size: 40))
+                        + Text(" News ").font(.custom("OpenSans-Bold", size: 40))
+                        + Text("\u{E91F}").font(.custom("icomoon", size: 40))
+                }
+                Spacer()
+                Text(Date(), style: .date)
+                    .font(.custom("OpenSans-Bold", size: 16))
+                    .foregroundColor(.gray)
             }
-            .font(.custom("icomoon", size: 40))
-            .foregroundColor(.white)
-            .padding()
-            
-            ZStack(alignment: .bottomLeading) {
-                Image("EPEagleHalf")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 120)
-                    .opacity(0.85)
-                
-                NewsBlock()
-                    .padding(EdgeInsets(top: 0, leading: 75, bottom: 30, trailing: 75))
+            Divider()
+            Text("Critical Information")
+                .font(.custom("OpenSans-Bold", size: 30))
+                .foregroundColor(.red)
+            HStack {
+                //ForEach...
+                Text("Important news")
+                //horz scrolling news
             }
+            Text("Recent News")
+                .font(.custom("OpenSans-Bold", size: 30))
+                .foregroundColor(.red)
+            VStack {
+                //ForEach...
+                Text("recent news")
+                //vertical scrolling news
+            }
+            Spacer()
         }
-        .navigationTitle("EagleNation News")
+        .padding(EdgeInsets(top: 30, leading: 100, bottom: 0, trailing: 100))
         .font(.custom(fontName, size: 18))
-        .background(
-            Image("EPHS_Front")
-                .resizable()
-                .scaledToFill()
-                .overlay(LinearGradient(gradient: Gradient(colors: [.red, .white]), startPoint: .top, endPoint: .bottom).opacity(0.9))
-        )
     }
 }
 

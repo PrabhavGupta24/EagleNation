@@ -11,7 +11,7 @@ class EPNews {
     private var newsBackend = NewsBackend()
     
     // MARK: - Access to Model
-    var news: [NewsBackend.Article] {
+    var article: [NewsBackend.Article] {
         newsBackend.news
     }
 }

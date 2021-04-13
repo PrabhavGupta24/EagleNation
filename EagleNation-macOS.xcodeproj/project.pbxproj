@@ -136,7 +136,7 @@
 			path = Calendar;
 			sourceTree = "<group>";
 		};
-		1855DA0B2607AA2300144486 /* fonts */ = {
+		1855DA0B2607AA2300144486 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				1855DA162607AA7200144486 /* OpenSans-Regular.ttf */,
@@ -144,7 +144,7 @@
 				1855DA1D2607AA7F00144486 /* OpenSans-Bold.ttf */,
 				1855DA482607CA7100144486 /* icomoon.ttf */,
 			);
-			path = fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		18867C1025F7325F0063D16A = {
@@ -178,7 +178,7 @@
 				18D7B1E125FBE6BD00083983 /* Authentication */,
 				182A0963260AD4E900C4CC90 /* Administration */,
 				18867C2025F732630063D16A /* Assets.xcassets */,
-				1855DA0B2607AA2300144486 /* fonts */,
+				1855DA0B2607AA2300144486 /* Fonts */,
 				18867C2525F732630063D16A /* Info.plist */,
 				18867C2625F732630063D16A /* EagleNation_macOS.entitlements */,
 				18867C2225F732630063D16A /* Preview Content */,

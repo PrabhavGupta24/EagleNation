@@ -10,18 +10,13 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         NavigationView {
-            NavBar { NavDir in
-                NavDir.dest
-            }
+            NavBar()
             NewsView()
         }
     }
 }
 
-struct NavBar<Destination: View>: View {
-    let navDirs = MainCommunication().navDirs
-    let buildDestination: (MainBackend.NavDir) -> Destination
-    @State var selectedView: Int? = 0
+struct NavBar: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     
     var body: some View {
@@ -31,15 +26,22 @@ struct NavBar<Destination: View>: View {
                 .scaledToFit()
                 .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
             Divider()
-            List(navDirs) { NavDir in
-                NavigationLink(destination: buildDestination(NavDir), tag: NavDir, selection: $selectedView) {
-                    Text(NavDir.title)
-                }
+            List {
+                NavigationLink(destination: NewsView()) {
+                    Text("News")
+                }.navigationTitle("Eden Prairie News")
+                NavigationLink(destination: BulletinView()) {
+                    Text("Bulletin")
+                }.navigationTitle("Eden Prairie Daily Bulletin")
+                NavigationLink(destination: ClubsView()) {
+                    Text("Clubs")
+                }.navigationTitle("Eden Prairie High School Clubs")
             }
         }
-        .font(.custom(fontName, size: 18))
     }
 }
+    
+
 
 // MARK: - Constants
 
