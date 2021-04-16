@@ -11,36 +11,41 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             NavBar()
-            NewsView()
         }
     }
 }
 
 struct NavBar: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
+    let navDirs = MainCommunication().navDirs
     
     var body: some View {
-        VStack() {
-            Image(colorScheme == .light ? "EPWingsLight" : "EPWingsDark")
-                .resizable()
-                .scaledToFit()
-                .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
+        VStack {
+            WingsLogo().padding(.top)
             Divider()
-            List {
-                NavigationLink(destination: NewsView()) {
-                    Text("News")
-                }.navigationTitle("Eden Prairie News")
-                NavigationLink(destination: BulletinView()) {
-                    Text("Bulletin")
-                }.navigationTitle("Eden Prairie Daily Bulletin")
-                NavigationLink(destination: ClubsView()) {
-                    Text("Clubs")
-                }.navigationTitle("Eden Prairie High School Clubs")
+            List(navDirs) { NavDir in
+                NavigationLink(destination: NavContentView(title: NavDir.title, content: NavDir.content)) {
+                    HStack {
+                        Image(systemName: NavDir.symbol)
+                        Text(NavDir.title)
+                    }
+                }
             }
         }
     }
 }
-    
+
+struct WingsLogo: View {
+    var body: some View {
+        VStack {
+            Text("\u{E921}")
+                .font(.custom("icomoon", size: 40))
+                .foregroundColor(.red)
+            Text("EDEN PRAIRIE")
+                .font(.custom("OpenSans-Bold", size: 15))
+        }
+    }
+}
 
 
 // MARK: - Constants

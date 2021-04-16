@@ -14,4 +14,9 @@ class EPNews {
     var article: [NewsBackend.Article] {
         newsBackend.news
     }
+    
+    // MARK: - User Intent
+    func newArticle(title: String, body: String) {
+        newsBackend.newArticle(title: title, body: body)
+    }
 }

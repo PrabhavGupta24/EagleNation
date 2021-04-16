@@ -10,18 +10,6 @@ import SwiftUI
 struct NewsView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("\u{E90B}").font(.custom("icomoon", size: 40))
-                        + Text(" News ").font(.custom("OpenSans-Bold", size: 40))
-                        + Text("\u{E91F}").font(.custom("icomoon", size: 40))
-                }
-                Spacer()
-                Text(Date(), style: .date)
-                    .font(.custom("OpenSans-Bold", size: 16))
-                    .foregroundColor(.gray)
-            }
-            Divider()
             Text("Critical Information")
                 .font(.custom("OpenSans-Bold", size: 30))
                 .foregroundColor(.red)
@@ -39,9 +27,7 @@ struct NewsView: View {
                 //vertical scrolling news
             }
             Spacer()
-        }
-        .padding(EdgeInsets(top: 30, leading: 100, bottom: 0, trailing: 100))
-        .font(.custom(fontName, size: 18))
+        }.font(.custom(fontName, size: 18))
     }
 }
 
