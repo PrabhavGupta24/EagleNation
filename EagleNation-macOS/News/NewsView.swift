@@ -16,7 +16,7 @@ struct NewsView: View {
             HStack {
                 //ForEach...
                 Text("Important news")
-                //horz scrolling news
+                //horizontal scrolling news
             }
             Text("Recent News")
                 .font(.custom("OpenSans-Bold", size: 30))
