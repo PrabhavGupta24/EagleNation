@@ -41,7 +41,7 @@ struct NewsBlock: View {
             NavigationLink("New Article", destination: NewArticleView())
 //            List {
 //                //foreach news
-//                // news.title...news.body
+//                // news.title ... news.body
 //            }
         }
     }
