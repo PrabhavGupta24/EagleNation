@@ -16,21 +16,21 @@ struct MainView: View {
 }
 
 struct NavBar: View {
-    @Environment(\.colorScheme) var colorScheme: ColorScheme
-    let navDirs = MainCommunication().navDirs
+    static let navDirs = MainCommunication().navDirs
+    @State private var selectedDir: MainBackend.NavDir? = navDirs[0]
     
     var body: some View {
         VStack {
             WingsLogo().padding(.top)
             Divider()
-            List(navDirs) { NavDir in
-                NavigationLink(destination: NavContentView(title: NavDir.title, content: NavDir.content)) {
+            List(NavBar.navDirs) { NavDir in
+                NavigationLink(destination: NavContentView(title: NavDir.title, content: NavDir.content), tag: NavDir, selection: $selectedDir) {
                     HStack {
                         Image(systemName: NavDir.symbol)
                         Text(NavDir.title)
                     }
                 }
-            }
+            }.listStyle(SidebarListStyle())
         }
     }
 }

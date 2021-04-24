@@ -17,10 +17,18 @@ struct MainBackend {
         NavDir(title: "Calendar", symbol: "calendar", content: AnyView(CalendarView()))
     ]
     
-    struct NavDir: Identifiable {
+    struct NavDir: Identifiable, Hashable {
         let title: String
         let symbol: String
         let content: AnyView
         let id = UUID()
+        
+        static func == (lhs: NavDir, rhs: NavDir) -> Bool {
+            lhs.id == rhs.id
+        }
+        
+        func hash(into hasher: inout Hasher) {
+            hasher.combine(id)
+        }
     }
 }

@@ -11,12 +11,12 @@ class EPNews {
     private var newsBackend = NewsBackend()
     
     // MARK: - Access to Model
-    var article: [NewsBackend.Article] {
+    var news: [NewsBackend.Article] {
         newsBackend.news
     }
     
     // MARK: - User Intent
-    func newArticle(title: String, body: String) {
-        newsBackend.newArticle(title: title, body: body)
+    func newArticle(title: String, body: String, image: Image) {
+        newsBackend.newArticle(title: title, body: body, image: image)
     }
 }
