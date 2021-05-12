@@ -12,8 +12,8 @@ struct NavContentView<Content: View>: View {
     var content: Content
     
     var body: some View {
-        ScrollView(.vertical) {
-            VStack(alignment: .leading, spacing: 5) {
+        VStack(alignment: .leading) {
+            VStack(spacing: 5) {
                 HStack {
                     VStack(alignment: .leading) {
                         Text("\u{E90B}").font(.custom("icomoon", size: 40))
@@ -26,9 +26,9 @@ struct NavContentView<Content: View>: View {
                         .foregroundColor(.gray)
                 }
                 Divider()
-                content.padding(.top, 10)
-                Spacer()
-            }.padding(EdgeInsets(top: 30, leading: 100, bottom: 10, trailing: 100))
+            }.padding(EdgeInsets(top: 30, leading: 100, bottom: 0, trailing: 100))
+            ScrollView(.vertical) { content.padding(.horizontal, 100) }
+            Spacer()
         }
     }
 }

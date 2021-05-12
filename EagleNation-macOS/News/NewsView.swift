@@ -11,31 +11,47 @@ struct NewsView: View {
     let newsBackend = EPNews()
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("Critical Information")
-                .font(.custom("OpenSans-Bold", size: 30))
-                .foregroundColor(.red)
-            ScrollView(.horizontal) {
+        ZStack(alignment: .leading) {
+            RoundedRectangle(cornerRadius: 12)
+                .foregroundColor(Color(.windowBackgroundColor))
+                .shadow(radius: 10)
+                // TODO: - add blur
+            VStack(alignment: .leading, spacing: 10) {
+                HStack {
+                    Text("Critical Information")
+                        .font(.custom("OpenSans-Bold", size: 30))
+                        .foregroundColor(.red)
+                    Spacer()
+                    Button("Prev", action: newsBackend.prevArticle(current: 1))
+                }
                 HStack {
                     ForEach(newsBackend.news) { article in
-                        NewsBlock(title: article.title, image: article.image)
+                        SmallNewsBlock(title: article.title, image: article.image)
                     }
                 }
-            }
-            Text("Recent News")
-                .font(.custom("OpenSans-Bold", size: 30))
-                .foregroundColor(.red)
-            VStack {
-                ForEach(newsBackend.news) { article in
-                    NewsBlock(title: article.title, image: article.image)
+            }.padding()
+        }
+        
+        ZStack(alignment: .leading) {
+            RoundedRectangle(cornerRadius: 12)
+                .foregroundColor(Color(.windowBackgroundColor))
+                .shadow(radius: 10)
+                // TODO: - add blur
+            VStack(alignment: .leading, spacing: 10) {
+                Text("Recent News")
+                    .font(.custom("OpenSans-Bold", size: 30))
+                    .foregroundColor(.red)
+                VStack {
+                    ForEach(newsBackend.news) { article in
+                        LargeNewsBlock(title: article.title, content: article.content, image: article.image)
+                    }.padding()
                 }
-            }
-            Spacer()
-        }.font(.custom(fontName, size: 18))
+            }.padding()
+        }
     }
 }
 
-struct NewsBlock: View {
+struct SmallNewsBlock: View {
     var title: String
     var image: Image
 
@@ -44,17 +60,46 @@ struct NewsBlock: View {
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(Color(.windowBackgroundColor))
                 .shadow(radius: 10)
-                // add blur
-            VStack() {
+                // TODO: - add blur
+            VStack(alignment: .leading) {
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .clipped()
-                Divider()
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                Spacer()
                 Text(title)
-                    .padding(EdgeInsets(top: -5, leading: 5, bottom: 5, trailing: 5))
+                    .font(.largeTitle)
+                    .padding()
+                Spacer()
             }
-        }.frame(width: 200, height: 150)
+        }.frame(width: 200, height: 180)
+    }
+}
+
+struct LargeNewsBlock: View {
+    var title: String
+    var content: String
+    var image: Image
+    
+    var body: some View {
+        GeometryReader { geometry in
+            ZStack(alignment: .leading) {
+                RoundedRectangle(cornerRadius: 12)
+                    .foregroundColor(Color(.windowBackgroundColor))
+                    .shadow(radius: 10)
+                    // TODO: - add blur
+                HStack {
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipped()
+                    VStack {
+                        Text(title)
+                        Text(content)
+                    }
+                }
+            }.frame(width: geometry.size.width)
+        }
     }
 }
 

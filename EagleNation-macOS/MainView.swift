@@ -52,7 +52,6 @@ struct WingsLogo: View {
 
 let fontName = "OpenSans-Regular"
 
-
 // MARK: - Preview
 
 struct ContentView_Previews: PreviewProvider {
