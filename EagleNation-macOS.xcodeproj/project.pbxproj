@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18107536264CC7B5009689D2 /* Image+centerCropped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18107535264CC7B5009689D2 /* Image+centerCropped.swift */; };
 		182A095E260AD41000C4CC90 /* EPAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A095D260AD41000C4CC90 /* EPAuth.swift */; };
 		182A0961260AD42200C4CC90 /* AuthBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A0960260AD42200C4CC90 /* AuthBackend.swift */; };
 		182A0965260AD50C00C4CC90 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A0964260AD50C00C4CC90 /* AdminView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18107535264CC7B5009689D2 /* Image+centerCropped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+centerCropped.swift"; sourceTree = "<group>"; };
 		182A095D260AD41000C4CC90 /* EPAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPAuth.swift; sourceTree = "<group>"; };
 		182A0960260AD42200C4CC90 /* AuthBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBackend.swift; sourceTree = "<group>"; };
 		182A0964260AD50C00C4CC90 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18107538264CC7C3009689D2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18107535264CC7B5009689D2 /* Image+centerCropped.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		182A0963260AD4E900C4CC90 /* Administration */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +184,7 @@
 				18A0A5F326266711007D52B0 /* NavContentView.swift */,
 				18867C1C25F7325F0063D16A /* EagleNation_macOSApp.swift */,
 				1855D9E72605113500144486 /* News */,
+				18107538264CC7C3009689D2 /* Extensions */,
 				1855D9E82605114A00144486 /* Bulletin */,
 				1855D9E92605116600144486 /* Clubs */,
 				1855D9EA2605117500144486 /* Schedule */,
@@ -298,6 +309,7 @@
 				182A096B260AD55200C4CC90 /* Admins.swift in Sources */,
 				18867C1D25F7325F0063D16A /* EagleNation_macOSApp.swift in Sources */,
 				18D7B1CD25FB4D0000083983 /* ClubsView.swift in Sources */,
+				18107536264CC7B5009689D2 /* Image+centerCropped.swift in Sources */,
 				182A0961260AD42200C4CC90 /* AuthBackend.swift in Sources */,
 				18867C5825F734040063D16A /* MainCommunication.swift in Sources */,
 				18A0A5F426266711007D52B0 /* NavContentView.swift in Sources */,

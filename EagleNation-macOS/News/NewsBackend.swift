@@ -20,19 +20,21 @@ struct NewsBackend {
         news.append(Article(title: title, content: content, image: image))
     }
     
-    func prevArticle(current: Int) -> Int {
-        if current == 1 {
-            return current
+    var newsBlock: Int = 1
+    
+    func prevArticle(newsBlock: Int) -> Int {
+        if newsBlock == 1 {
+            return newsBlock
         } else {
-            return current - 1
+            return newsBlock - 1
         }
     }
     
-    func nextArticle(current: Int) -> Int {
-        if current == news.count {
-            return current
+    func nextArticle(newsBlock: Int) -> Int {
+        if newsBlock == news.count {
+            return newsBlock
         } else {
-            return current + 1
+            return newsBlock + 1
         }
     }
     
