@@ -15,16 +15,20 @@ class EPNews {
         newsBackend.news
     }
     
+    var newsBlock: Int {
+        newsBackend.newsBlock
+    }
+    
     // MARK: - User Intent
     func newArticle(title: String, content: String, image: Image) {
         newsBackend.newArticle(title: title, content: content, image: image)
     }
     
-    func prevArticle(current: Int) -> Int {
-        newsBackend.prevArticle(current: current)
+    func prevArticle(newsBlock: Int) -> Int {
+        newsBackend.prevArticle(newsBlock: newsBlock)
     }
     
-    func nextArticle(current: Int) -> Int {
-        newsBackend.nextArticle(current: current)
+    func nextArticle(newsBlock: Int) -> Int {
+        newsBackend.nextArticle(newsBlock: newsBlock)
     }
 }

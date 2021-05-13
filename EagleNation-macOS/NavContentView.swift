@@ -26,7 +26,7 @@ struct NavContentView<Content: View>: View {
                         .foregroundColor(.gray)
                 }
                 Divider()
-            }.padding(EdgeInsets(top: 30, leading: 100, bottom: 0, trailing: 100))
+            }.padding(EdgeInsets(top: 30, leading: 100, bottom: 10, trailing: 100))
             ScrollView(.vertical) { content.padding(.horizontal, 100) }
             Spacer()
         }
