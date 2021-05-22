@@ -36,6 +36,9 @@
 		18D7B1CD25FB4D0000083983 /* ClubsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D7B1CC25FB4D0000083983 /* ClubsView.swift */; };
 		18D7B1D225FB4D1900083983 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D7B1D125FB4D1900083983 /* ScheduleView.swift */; };
 		18D7B1D725FB4D2300083983 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D7B1D625FB4D2300083983 /* CalendarView.swift */; };
+		4612D1CE26589AB200D020BB /* MondayDailyBulletin.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4612D1CD26589AB200D020BB /* MondayDailyBulletin.pdf */; };
+		46BF88632659817E00BD6882 /* EPClubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF88622659817E00BD6882 /* EPClubs.swift */; };
+		46BF8866265981DD00BD6882 /* ClubsBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF8865265981DD00BD6882 /* ClubsBackend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,9 +71,14 @@
 		18A0A5F326266711007D52B0 /* NavContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavContentView.swift; sourceTree = "<group>"; };
 		18D7B1BD25FB4B4B00083983 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		18D7B1C725FB4CEE00083983 /* BulletinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinView.swift; sourceTree = "<group>"; };
-		18D7B1CC25FB4D0000083983 /* ClubsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsView.swift; sourceTree = "<group>"; };
+		18D7B1CC25FB4D0000083983 /* ClubsView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ClubsView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		18D7B1D125FB4D1900083983 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		18D7B1D625FB4D2300083983 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		4612D1C626589A2700D020BB /* PSPDFKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PSPDFKit.xcframework; path = "../../../../../../Volumes/PSPDFKit/PSPDFKit 10.4.0 for iOS/PSPDFKit.xcframework"; sourceTree = "<group>"; };
+		4612D1C726589A2700D020BB /* PSPDFKitUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PSPDFKitUI.xcframework; path = "../../../../../../Volumes/PSPDFKit/PSPDFKit 10.4.0 for iOS/PSPDFKitUI.xcframework"; sourceTree = "<group>"; };
+		4612D1CD26589AB200D020BB /* MondayDailyBulletin.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MondayDailyBulletin.pdf; path = ../../../../Desktop/MondayDailyBulletin.pdf; sourceTree = "<group>"; };
+		46BF88622659817E00BD6882 /* EPClubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPClubs.swift; sourceTree = "<group>"; };
+		46BF8865265981DD00BD6882 /* ClubsBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsBackend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				18D7B1CC25FB4D0000083983 /* ClubsView.swift */,
+				46BF88622659817E00BD6882 /* EPClubs.swift */,
+				46BF8865265981DD00BD6882 /* ClubsBackend.swift */,
 			);
 			path = Clubs;
 			sourceTree = "<group>";
@@ -162,8 +172,10 @@
 		18867C1025F7325F0063D16A = {
 			isa = PBXGroup;
 			children = (
+				4612D1CD26589AB200D020BB /* MondayDailyBulletin.pdf */,
 				18867C1B25F7325F0063D16A /* EagleNation-macOS */,
 				18867C1A25F7325F0063D16A /* Products */,
+				4612D1C526589A2700D020BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -216,6 +228,15 @@
 				182A0960260AD42200C4CC90 /* AuthBackend.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4612D1C526589A2700D020BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4612D1C626589A2700D020BB /* PSPDFKit.xcframework */,
+				4612D1C726589A2700D020BB /* PSPDFKitUI.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +302,7 @@
 				1855DA492607CA7200144486 /* icomoon.ttf in Resources */,
 				1855DA1E2607AA7F00144486 /* OpenSans-Bold.ttf in Resources */,
 				18867C2125F732630063D16A /* Assets.xcassets in Resources */,
+				4612D1CE26589AB200D020BB /* MondayDailyBulletin.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				182A096E260AD5E200C4CC90 /* ArticleView.swift in Sources */,
+				46BF8866265981DD00BD6882 /* ClubsBackend.swift in Sources */,
 				18D7B1D725FB4D2300083983 /* CalendarView.swift in Sources */,
 				1855DA462607BB7600144486 /* NewsBackend.swift in Sources */,
 				1855DA432607BB2600144486 /* EPNews.swift in Sources */,
@@ -305,6 +328,7 @@
 				182A095E260AD41000C4CC90 /* EPAuth.swift in Sources */,
 				18867C5125F7333A0063D16A /* AuthView.swift in Sources */,
 				18D7B1BE25FB4B4B00083983 /* NewsView.swift in Sources */,
+				46BF88632659817E00BD6882 /* EPClubs.swift in Sources */,
 				18D7B1D225FB4D1900083983 /* ScheduleView.swift in Sources */,
 				182A096B260AD55200C4CC90 /* Admins.swift in Sources */,
 				18867C1D25F7325F0063D16A /* EagleNation_macOSApp.swift in Sources */,
