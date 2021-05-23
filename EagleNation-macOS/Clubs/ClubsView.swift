@@ -79,13 +79,14 @@ struct WideClubsBlock: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .clipped()
+                        .frame(width: 150, height: 120)
                     VStack (alignment: .leading) {
                         Text(title)
                             .font(.title)
                         Text("")
                         Text(content).font(.title3)
                         HStack(spacing: 0) {
-                            Text("Contact: ")
+                            Text("Contact: ").bold()
                             Text(contact)
                             Text(" at ")
                             Text(contactEmail)
@@ -93,7 +94,7 @@ struct WideClubsBlock: View {
                     }.padding()
                 }
             }.frame(width: geo.size.width)
-        }.frame(height: 120)
+        }.frame(height: 150)
     }
 }
 
