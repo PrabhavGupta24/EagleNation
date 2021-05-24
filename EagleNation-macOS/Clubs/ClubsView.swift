@@ -27,19 +27,6 @@ struct ClubsView: View {
                 }.padding()
             }
             
-//            ZStack(alignment: .leading) {
-//                RoundedRectangle(cornerRadius: 12)
-//                    .foregroundColor(Color(.windowBackgroundColor))
-//                    .shadow(radius: 10)
-//                VStack(alignment: .leading, spacing: 10) {
-//                    ClubsTitle("Recent News")
-//                    VStack {
-//                        ForEach(clubsBackend.clubs) { article in
-//                            WideClubsBlock(title: article.title, content: article.content, image: article.image)
-//                        }
-//                    }
-//                }.padding()
-//            }
         }
     }
 }
@@ -55,8 +42,6 @@ struct ClubsTitle: View {
                 .font(.custom("OpenSans-Bold", size: 28))
                 .foregroundColor(.red)
             Spacer()
-            //Button("Prev", action: newsBackend.prevArticle(current: 1))
-            //Button("Next", action: newsBackend.nextArticle(current: 1))
         }
     }
 }
@@ -97,27 +82,6 @@ struct WideClubsBlock: View {
         }.frame(height: 150)
     }
 }
-
-//struct SmallClubsBlock: View {
-//    var title: String
-//    var image: Image
-//
-//    var body: some View {
-//        GeometryReader { geo in
-//            ZStack {
-//                RoundedRectangle(cornerRadius: 12)
-//                    .foregroundColor(Color(.windowBackgroundColor))
-//                    .shadow(radius: 10)
-//                VStack(alignment: .leading, spacing: 0) {
-//                    image.centerCropped()
-//                    Text(title)
-//                        .font(.largeTitle)
-//                        .padding()
-//                }
-//            }.frame(width: geo.size.width)
-//        }.frame(height: 150)
-//    }
-//}
 
 
 
